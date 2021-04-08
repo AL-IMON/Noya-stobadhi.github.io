@@ -1,0 +1,793 @@
+/*==========================
+========= Common CSS ===========
+============================*/
+
+
+body{
+    background-color: white;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: myfont;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+@font-face {font-family: myfont;src: url('../fonts/SolaimanLipi.ttf');}
+ 
+ a:link,
+ a:visited {
+     text-decoration: none;
+     cursor: pointer;
+ }
+
+ .leadNews {
+    background: linear-gradient(to bottom, rgba(10, 10, 10, 0) 0%, rgb(0, 0, 0) 60%);
+    display: block;
+}
+
+.leadNews h3,h6{
+    padding-bottom: 8px;
+    font-weight: bold;
+}
+
+.head_menu{
+    background-color: black;
+    font-size: 26px;
+    padding-top: 5px;
+}
+ 
+.international_news p{
+    font-size: 15px;
+}
+.international_news h5{
+font-size: 16px;
+}
+
+/*==========================
+========= Header ===========
+============================*/
+
+
+.nav_list .header_hover_bottom_menu a{
+     color: black;
+     float: left;
+}
+
+.nav_list li a{
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.header_li ul{
+    display: flex;
+    width: max-content;
+    background: #bebebe;
+}
+
+
+.header_li ul li{
+   padding: 7px;
+
+}
+
+
+.navbar{
+    margin-top: 20px;
+}
+
+.nav_list li:hover{
+    background: rgb(141, 140, 140);
+    display: inline-block;
+}
+
+
+
+.header_li{
+    position: relative;
+}
+
+
+.header_hover_bottom_menu{
+    position: absolute;
+    display: none;
+    
+
+}
+
+#src_icon{
+    cursor: pointer;
+    margin-left:5px;
+    margin-top: 13px;
+
+}
+
+.input-group-addon{
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+/*==========================
+========= slidebar ===========
+============================*/
+.slidebar{
+    background: #E5E5E5;
+}
+
+.slidebar p{
+    color: white;
+    font-weight: bold;
+
+}
+
+
+.headlines{
+    width: 100%;
+    font-size: 16px;
+    position: fixed;
+    overflow: hidden;
+    background: #E5E5E5;
+    z-index: 99;
+    width: 100%;
+    border-radius: 2px;
+    position: relative;
+}
+
+.headline_left{
+    font-size: 20px;
+    display: inline-block;
+    background: rgb(243, 3, 23);
+    position: absolute;
+    z-index: 99;
+    height: 50px;
+    text-align: center;
+}
+
+.headlines ul{
+    width: 100%;
+    margin: 0px;
+    list-style-type: none;
+}
+
+.headlines ul li {
+    list-style: none;
+    padding: 4px;
+    margin: 0 0 0 5px;
+}
+
+.headlines marquee {
+    float: left;
+    width: 100%;
+    height: 40px;
+    padding:3px;
+}
+
+.headlines ul li a {
+      text-decoration: none;
+      color: #000;
+      
+}
+
+
+/*=========================
+================border box======
+=========================*/
+
+.tab_bar_block_new ul{
+    display:table;
+    width: 100%;
+    margin:0;
+    border-bottom: 2px solid #030303;
+    background: #ececec;
+}
+
+.tab_bar_block_new ul > li{
+    padding: 3px;
+    position:relative; 
+    display: table-cell; 
+    line-height: 25px;
+    font-size:16px;
+    color:#000;
+    width:50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tab_bar_block_new ul > li.active{
+    background: #888888;
+    color: #fff;
+}
+
+.allNews{
+    border-radius: 5px;
+    padding: 3px;
+    background: #888888;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin: 10px 0 0 0;
+    color: #fff;
+    border-radius:5px;
+}
+
+.allNews:hover{
+    color:black;
+    background: rgb(202, 202, 202);
+}
+
+#test1{ 
+    height:270px; 
+    overflow:auto;
+}
+
+#mostview1{ 
+    height:270px;
+    overflow:auto;
+}
+
+#popular_list_block1{
+    display: none;
+}
+
+.border-box img{
+    position:relative;
+}
+
+.editor_picks_list{
+    border-bottom:1px solid #ccc;
+    display: table;
+    width: 100%; 
+    border-bottom: 1px solid #ccc;
+    padding-bottom:10px;
+    background:#fff;
+    padding:3px 10px;
+}
+
+.list_display_block1 .editor_picks_list:last-child{
+    margin: 0px 0 0 0; 
+}
+
+.editor_picks_list > a{
+    font-size:15px;
+}
+
+.editor_picks_list > a > div{
+    display: table-cell; 
+    vertical-align: middle;
+}
+
+.editor_picks_list > a > div.img{
+    background: #f7f7f7;
+    width: 90px;
+    height: 60px;
+    text-align: center;
+}
+
+.editor_picks_list > a > div.img:hover{
+    opacity:0.9;
+}
+.editor_picks_list > a > div.img > i{
+    font-size: 24px;
+    color: #eee;
+}
+
+.editor_picks_list > a > div.headline > p{
+    font-size: 15px;
+    line-height: 20px; 
+    padding: 0 0px; 
+    margin:0; 
+    color:#000;
+}
+.editor_picks_list > a > div.headline > p:hover{
+    color:#090088;
+}
+.headline p.r_logo{
+    float: left;
+}
+
+
+/*=================================
+=================Main lead news==========
+==================================*/
+
+.main-lead{
+    position:relative;
+}
+.main-lead-title{
+    bottom: 0px;
+    width: 100%;
+    color: #fff;
+    z-index:9;
+}
+             
+.main-lead-title h4{
+    font-size:18px;
+}
+.image-lead {
+    height: 340px;
+    text-align: center;
+    background: rgb(211, 211, 211);
+    overflow: hidden;
+}
+
+.image-lead img{
+    height:360px;
+    width: auto;
+    text-align:center;
+}
+
+.sub-lead{
+    width: 100%;
+}
+
+.fa-play-circle{
+    background: rgb(243, 3, 23);
+    width: 100%;
+    height: 40px;
+    padding-top: 12px;
+    font-size: 16px;
+    color: white;
+    font-weight: normal;
+}
+
+.live_video i{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    color: #fff;
+    background:red;
+    height: 40px;
+    width: 40px;
+    padding: 11px 15px;
+    border-radius: 50%;
+}
+
+
+.sub-lead-title{
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    z-index:1;
+}
+.sub-lead-title h4{
+    font-size:18px;
+}
+
+
+.advertise img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+/*=================================
+=================midbody==========
+==================================*/
+
+.international{
+    font-size: 14px;
+}
+
+
+
+/*=================================
+=================photo gallery==========
+==================================*/
+
+.cam_icon {
+    top: 0;
+    font-size: 50px;
+    color: #f5000094;
+    text-align: right;
+}
+
+
+
+
+/*=================================
+=================  box news    ==========
+==================================*/
+
+.border-right-grey{
+    border-right: 1px solid #ccc!important;
+}
+
+.media-sub{
+    width: 100%;
+}
+
+/*=================================
+=================  border-box    ==========
+==================================*/
+
+.border-box h3{
+    border-left: solid;
+    border-width: 20px;
+}
+
+.box-news img{
+    width: 100%;
+}
+
+/*=================================
+================video==========
+==================================*/
+
+.video_icon{
+    top: 40%;
+    left: 40%;
+    font-size: 70px;
+    color: #faf8f894;
+    
+}
+
+.video_sub-icon{
+    top: 20%;
+    left: 40%;
+    font-size: 50px;
+    color: #faf8f894;
+}
+
+.video_sub_icon{
+    top: 70%;
+    left: 40%;
+    font-size: 50px;
+    color: #faf8f894;
+}
+
+/*=================================
+================footer==========
+==================================*/
+.footer{
+    background: #E5E5E5 ;
+    border-top: solid;
+    border-width: 10px;
+    border-color: #2a5595;
+}
+.footer_menu{
+    margin-left: 30px;
+}
+.footer_menu li a{
+    padding: 1px;
+    font-weight:bold;
+    float: left;
+    
+}
+
+.footer_logo{
+    padding-top: 70px;
+    text-align: center;
+}
+
+
+
+/*=======================================================
+=========================================================
+====================================media query==========
+==========================================================*/
+
+/*=================================
+================for mobile==========
+==================================*/
+
+@media screen and (max-width: 767px) and (min-width: 320px){
+ 
+html{
+    overflow-x: hidden;
+}
+    body{
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .head_menu{
+        background-color: black;
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    /*==========================
+========= Header ===========
+============================*/
+  
+    .hedaer_img img{
+        padding-left: 25%;
+        height: 70px;
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+    .nav_list .header_hover_bottom_menu a{
+        color: rgb(250, 246, 246);
+        float: center;
+   }
+   
+   .nav_list li a{
+       color: rgb(0, 0, 0);
+       font-weight: bolder;
+       font-size: 14px;
+   }
+   
+   .header_li ul{
+       display: inline-block;
+       background: #030000;
+   }
+   .navbar{
+       margin-top: 0px;
+       background: rgba(59, 59, 59, 0.212);;
+       margin-bottom: 15px;
+   }
+   
+   .nav_list li:hover{
+       background: rgb(141, 140, 140);
+       display: inline-block;
+   } 
+   .header_li{
+       position: relative;
+   }
+   
+   
+   .header_hover_bottom_menu{
+       position: absolute;
+       display: none;
+       
+   
+   }
+   
+   #src_icon{
+       cursor: pointer;
+       margin-left:0px;
+       margin-top: 0px;
+   
+   }
+   
+   .input-group-addon{
+       padding: 10px;
+       font-size: 20px;
+   }
+
+
+/*=========================
+================border box======
+=========================*/
+
+.border{
+  margin-bottom: 10px;
+}
+
+/*=================================
+=================Main lead news==========
+==================================*/
+
+.image-lead{
+    position: relative;
+    height: auto;
+}
+
+.image-lead img{
+    width: auto;
+    height: auto;
+}
+
+.main-lead-title{
+    position: absolute;
+    width: 100%;
+    color: #fff;
+}
+             
+.main-lead-title h3{
+    font-size:18px;
+}
+
+.main-lead img{
+    width: 100%;
+}
+  
+
+/*=================================
+=================sub lead news==========
+==================================*/
+
+.sub-lead h3{
+    font-weight: bold;
+    font-size: 14px;
+    width: 100%;
+}
+
+.sub-lead p{
+    margin: 0 auto;
+    font-size: 12px;
+}
+
+.media-body p{
+    font-size: 12px;
+}
+.media-body{
+    margin: 0 auto;
+}
+.media-body h5{
+    font-weight: bold;
+    font-size: 14px;
+}
+.media-body p{
+    font-size: 12px;
+    font-weight: normal;
+}
+.media img{
+    height: auto;
+    width: 100%;
+}
+
+
+/*=================================
+=================advertise==========
+==================================*/
+
+.advertise img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+
+
+
+.politics_lead h5,p{
+    font-size: 14px;
+}
+
+
+.sub-lead img{
+    width: 100%;
+    height: auto;
+}
+
+
+.sports_sub img{
+   width: 100%;
+   padding-top: 10px;
+}
+
+/*=================================
+================  photo   ==========
+==================================*/
+
+.photo_gallery{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+  
+.photo_gallery img{
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.cam_icon {
+    top: 0;
+    font-size: 15px;
+    color: #f5000094;
+    text-align: right;
+}
+
+
+
+.media-sub img{
+    width: 100%;
+}
+
+
+/*=================================
+================video==========
+==================================*/
+
+.video_icon{
+    top: 40%;
+    left: 40%;
+    font-size: 50px;
+    color:  #f50606fb;
+    
+}
+
+.video_sub-icon{
+    top: 22%;
+    left: 40%;
+    font-size: 25px;
+    color: #f50606fb;
+}
+
+.video_sub_icon{
+    top: 70%;
+    left: 40%;
+    font-size: 25px;
+    color: #f50606fb;
+}
+    
+/*=================================
+================footer==========
+==================================*/
+.footer_logo{
+    padding-top: 0px;
+    text-align: center;
+}
+
+.footer{
+    background: #E5E5E5 ;
+    border-top: solid;
+    border-width: 10px;
+    border-color: #2a5595;
+}
+
+.footer_menu li a{
+    font-weight:bold
+    
+}
+.footer_menu{
+    margin-left: 20px;
+}
+
+  
+}
+
+/*=================================
+================for tablet==========
+==================================*/
+
+
+@media screen and (max-width: 1023px) and (min-width: 768px){
+
+    .international_news p{
+        display: none;
+    }
+    .international_news h5{
+        font-size: 15px;
+    }
+    .international_news{
+        margin-bottom: 3px;
+        width: 100%;
+    }
+    .internatinal-news img{
+        width: 100%;
+    }
+    .photo_gallery{
+        padding: 12px;
+    }
+    .sports img{
+       width: 100%; 
+    }
+    .media_news img{
+        width: 100%;
+    }
+
+    /*=================================
+================video==========
+==================================*/
+
+.video_icon{
+    top: 35%;
+    left: 40%;
+    font-size: 50px;
+    color:  #f50606fb;
+    
+}
+
+.video_sub-icon{
+    top: 22%;
+    left: 40%;
+    font-size: 25px;
+    color: #f50606fb;
+}
+
+.video_sub_icon{
+    top: 70%;
+    left: 40%;
+    font-size: 25px;
+    color: #f50606fb;
+}
+
+}
